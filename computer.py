@@ -1,34 +1,34 @@
 class Computer:
+    """
+    A class representing a computer with various specifications.
+    Stores details such as processor type, memory, OS, and price.
+    """
 
- # What attributes will it need?
-    description: str
-    processor_type: str
-    hard_drive_capacity: int
-    memory: int
-    operating_system: str
-    year_made: int
-    price: int
+    # Attributes
+    description: str  # Brief description of the computer
+    processor_type: str  # Type of processor used
+    hard_drive_capacity: int  # Storage capacity in GB
+    memory: int  # RAM size in GB
+    operating_system: str  # Installed OS
+    year_made: int  # Year the computer was manufactured
+    price: int  # Price of the computer
 
-
-    # How will you set up your constructor?
-    # Remember: in python, all constructors have the same name (__init__)
+    # Constructor
     def __init__(self,
-                    des: str,
-                    pro_typ: str,
-                    hdd_cap: int,
-                    mem: int,
-                    os: str,
-                    year: int,
-                    amt: int):
-        
+                 des: str,
+                 pro_typ: str,
+                 hdd_cap: int,
+                 mem: int,
+                 os: str,
+                 year: int,
+                 amt: int):
+        """
+        Initializes a Computer object with given specifications.
+        """
         self.description = des
-        self.processor_typ = pro_typ
+        self.processor_type = pro_typ
         self.hard_drive_capacity = hdd_cap
         self.memory = mem
         self.operating_system = os
         self.year_made = year
         self.price = amt
-     # You'll remove this when you fill out your constructor
-
-    # What methods will you need?
-   
