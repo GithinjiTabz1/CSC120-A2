@@ -31,7 +31,7 @@ class ResaleShop:
         """
         Updates the price of a computer if it exists in the inventory.
         """
-        if self.inventory[item_id] is not None:
+        if item_id in self.inventory:
             self.inventory[item_id]["price"] = new_price
         else:
             print("Item", item_id, "not found. Cannot update price.")
